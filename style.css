@@ -2,7 +2,162 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0A0A10;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0A0A10;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    max-width: 414px;
+}
+
+.image-login {
+    margin-bottom: 52px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.email,
+.password {
+    font-weight: 400;
+    color: #FFFFFF99;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.41 px;
+}
+
+input {
+    height: 30px;
+    color: #ffffff;
+    background-color: #0A0A10;
+    border: none;
+    border-bottom: 1px solid #FFFFFF99;
+    padding: 0 4px;
+}
+
+.password {
+    margin-top: 32px;
+}
+
+.input-p {
+    margin-bottom: 24px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: auto;
+}
+
+.button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background-color: #D93856;
+    height: 60px;
+    border: none;
+    margin-bottom: 14px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.button-login:hover {
+    background-color: #d93856e0;
+
+}
+
+.button-login:active {
+    background-color: #d93856ef;
+}
+
+
+.button-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #FFFFFF24;
+    height: 60px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.button-google:hover {
+    background-color: #ffffff25;
+}
+
+.button-google:active {
+    background-color: #ffffff2a;
+}
+
+.container-link {
+    position: relative;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+
+    color: #FFFFFF99;
+    cursor: pointer;
+
+    max-width: 190px;
+    margin: 40px auto 0;
+}
+
+a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    background-color: #D93856;
+    bottom: -3px;
+    transition: 0.3s ease;
+
+}
+
+a:hover::after {
+    content: "";
+    width: 180px;
+    height: 1px;
+    position: absolute;
+    background-color: #D93856;
+    bottom: -3px;
+
+}
+
+span:hover {
+    color: #ffffffe2;
+}
+
+span:active {
+    color: #ffffff69;
+
 }
